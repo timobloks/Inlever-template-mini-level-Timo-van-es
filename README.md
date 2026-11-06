@@ -8,7 +8,7 @@ een versie van blik gooien
 
 Screenshot / GIF van je level
 Mini-level preview
-![mini level](file:///C:/Users/timov/Downloads/Mini%20level%20unity%20Timo%20van%20Es.gif)
+![mini level](https://s6.ezgif.com/tmp/ezgif-6d8c2f727a541bdc.gif)
 Bewegend object
 ...
 
