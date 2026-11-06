@@ -36,6 +36,31 @@ public class Pittenzak : MonoBehaviour
 // Plak hier de OnCollisionEnter/OnTriggerEnter code die je hebt gebruikt.
 private void OnTriggerEnter(Collider other)
 {
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class WinPlane : MonoBehaviour
+{
+    [Tooltip("The tag of the game object that triggers the win condition.")]
+    [SerializeField] private string targetTag = "Player";
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag(targetTag))
+        {
+            Debug.Log("Level Won!");
+
+            // Option A: Load the next level in the Build Settings
+            int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+            {
+                SceneManager.LoadScene(nextSceneIndex);
+            }
+            else
+            {
+                // Fallback if this is the last level
+                SceneManager.LoadScene("WinScreen");
+ 
 public class CapsuleCollider : Collider
 public class BoxCollider : Collider
 public class BoxCollider : Collider
@@ -47,6 +72,7 @@ public class BoxCollider : Collider
 public class BoxCollider : Collider
 public class BoxCollider : Collider
 public class BoxCollider : Collider
+
 }
 ...
 
