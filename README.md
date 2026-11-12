@@ -8,7 +8,7 @@ een versie van blik gooien
 
 Screenshot / GIF van je level
 Mini-level preview
-![mini level]( src=""https://giphy.com/gifs/5DFLijf6IYAH0vrWuQ">)
+![mini level](https://media3.https://giphy.com/embed/5DFLijf6IYAH0vrWuQ)
 
 Bewegend object:
 Mijn bewegende object is een capsule die ik heb gekozen om te gebruiken als pittenzak in dit level.
